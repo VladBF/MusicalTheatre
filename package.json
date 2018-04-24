@@ -1,0 +1,33 @@
+{
+  "name": "musicaltheatre",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "browserify public/react_components/constructor.js -o public/js/main.js -d -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladBF/MusicalTheatre.git"
+  },
+  "author": "Vlad Bychok",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladBF/MusicalTheatre/issues"
+  },
+  "homepage": "https://github.com/VladBF/MusicalTheatre#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "browserify": "^16.1.1",
+    "express": "^4.16.3",
+    "path": "^0.12.7",
+    "pg": "^6.4.2",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
+  }
+}

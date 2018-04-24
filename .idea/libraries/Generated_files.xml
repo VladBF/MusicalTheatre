@@ -1,0 +1,32 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/public/react_components/actorsPage.js" />
+        <item url="file://$PROJECT_DIR$/public/react_components/app.js" />
+        <item url="file://$PROJECT_DIR$/public/react_components/components/navbar.js" />
+        <item url="file://$PROJECT_DIR$/public/react_components/constructor.js" />
+        <item url="file://$PROJECT_DIR$/public/react_components/contactsPage.js" />
+        <item url="file://$PROJECT_DIR$/public/react_components/homePage.js" />
+        <item url="file://$PROJECT_DIR$/public/react_components/newsPage.js" />
+        <item url="file://$PROJECT_DIR$/public/react_components/repertoirePage.js" />
+        <item url="file://$PROJECT_DIR$/public/react_components/storyPage.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/public/react_components/main.js" />
+      <root url="file://$PROJECT_DIR$/public/react_components/test.js" />
+      <root url="file://$PROJECT_DIR$/public/react_components/home_page.js" />
+      <root url="file://$PROJECT_DIR$/public/react_components/actorsPage.js" />
+      <root url="file://$PROJECT_DIR$/public/react_components/app.js" />
+      <root url="file://$PROJECT_DIR$/public/react_components/components/navbar.js" />
+      <root url="file://$PROJECT_DIR$/public/react_components/constructor.js" />
+      <root url="file://$PROJECT_DIR$/public/react_components/contactsPage.js" />
+      <root url="file://$PROJECT_DIR$/public/react_components/homePage.js" />
+      <root url="file://$PROJECT_DIR$/public/react_components/newsPage.js" />
+      <root url="file://$PROJECT_DIR$/public/react_components/repertoirePage.js" />
+      <root url="file://$PROJECT_DIR$/public/react_components/storyPage.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
