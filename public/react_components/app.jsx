@@ -14,12 +14,13 @@ let Navbar = require('./components/navbar').Navbar;
 /*--pages--*/
 
 
-let Home = require('./homePage').Home;
+let Poster = require('./posterPage').Poster;
 let Actors = require('./actorsPage').Actors;
-let Repertoire = require('./repertoirePage').Repertoire;
+let Repertory = require('./repertoirePage').Repertory;
 let Story = require('./storyPage').Story;
 let News = require('./newsPage').News;
 let Contacts = require('./contactsPage').Contacts;
+
 
 
 
@@ -41,14 +42,10 @@ class MainComponent extends React.Component{
 
                             <React.Fragment >
                                 <div className="main-pages-container">
-                                    <div className="button-language-container">
-                                        <button className="button-language">Eng</button>
-                                        <button className="button-language">Ukr</button>
-                                        <button className="button-language">Rus</button>
-                                    </div>
-                                    <Route exact path = "/" component={Home}/>
+
+                                    <Route exact path = "/" component={Poster}/>
                                     <Route exact path = "/actors" component={Actors}/>
-                                    <Route exact path = "/repertoire" component={Repertoire}/>
+                                    <Route  path = "/repertoire" component={Repertory}/>
                                     <Route exact path = "/story" component={Story}/>
                                     <Route exact path = "/news" component={News}/>
                                     <Route exact path = "/contacts" component={Contacts}/>

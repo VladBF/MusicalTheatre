@@ -9,9 +9,13 @@ server.use(bodyParser.urlencoded({extended:true})); /*подключили body-
 server.use(bodyParser.json());
 
 
+server.get('/actorsList',require('./controllers/actors-data.js'));
+server.get('/repertoireList',require('./controllers/repertoire-data.js'));
 
 server.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'public/index.html'))
 });
 
-server.listen(3000);
+
+
+server.listen(3001);

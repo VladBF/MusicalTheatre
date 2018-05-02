@@ -11,9 +11,9 @@ let Navbar = require('./components/navbar').Navbar;
 
 /*--pages--*/
 
-let Home = require('./homePage').Home;
+let Poster = require('./posterPage').Poster;
 let Actors = require('./actorsPage').Actors;
-let Repertoire = require('./repertoirePage').Repertoire;
+let Repertory = require('./repertoirePage').Repertory;
 let Story = require('./storyPage').Story;
 let News = require('./newsPage').News;
 let Contacts = require('./contactsPage').Contacts;
@@ -41,28 +41,9 @@ class MainComponent extends React.Component {
                         React.createElement(
                             'div',
                             { className: 'main-pages-container' },
-                            React.createElement(
-                                'div',
-                                { className: 'button-language-container' },
-                                React.createElement(
-                                    'button',
-                                    { className: 'button-language' },
-                                    'Eng'
-                                ),
-                                React.createElement(
-                                    'button',
-                                    { className: 'button-language' },
-                                    'Ukr'
-                                ),
-                                React.createElement(
-                                    'button',
-                                    { className: 'button-language' },
-                                    'Rus'
-                                )
-                            ),
-                            React.createElement(Route, { exact: true, path: '/', component: Home }),
+                            React.createElement(Route, { exact: true, path: '/', component: Poster }),
                             React.createElement(Route, { exact: true, path: '/actors', component: Actors }),
-                            React.createElement(Route, { exact: true, path: '/repertoire', component: Repertoire }),
+                            React.createElement(Route, { path: '/repertoire', component: Repertory }),
                             React.createElement(Route, { exact: true, path: '/story', component: Story }),
                             React.createElement(Route, { exact: true, path: '/news', component: News }),
                             React.createElement(Route, { exact: true, path: '/contacts', component: Contacts })

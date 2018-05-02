@@ -1,0 +1,20 @@
+/*body {
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: 1370px 2500px;
+    background-position: inherit;
+
+}*/
+.actor-img{
+    height: 200px;
+    margin-top: 25px;
+    margin-left: 35px;
+}
+.actor-name{
+    height: 100px;
+    font-size: 20px;
+    margin-left: 35px;
+    color: black;
+
+
+}
