@@ -1,0 +1,44 @@
+.navbar-inverse{
+    background: #500d09;
+    border-top: 2px solid #edc27f;
+    border-bottom: 2px solid #edc27f;
+    text-align: center;
+    height: 45px;
+    margin-top: 20px;
+}
+.navbar-list{
+    margin-top: 30px;
+}
+.navbar-links{
+    color:white;
+    font-size: 17px;
+    font-style: italic;
+}
+.navbar-list {
+    margin-top: 30px;
+    display: block;
+    position: relative;
+    left: 18%;
+}
+.navbar-inverse .navbar-nav > li > a {
+    font-family: 'SnarskyOldStyleNarrowRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    color: #f8a056;
+    text-transform: uppercase;
+
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #f7d418;
+}
+.navbar-links {
+    color: white;
+    font-size: 13px;
+    margin-top: -30px;
+}
+.mask {
+    height: 80px;
+    width: 90px;
+    margin-top: -30px;
+}

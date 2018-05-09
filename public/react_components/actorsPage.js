@@ -1,6 +1,7 @@
 let React = require('react');
 
 let ActorsData = [];
+let DirectionsData = [];
 
 let ActorsPeople = () => {
     return React.createElement(
@@ -8,7 +9,7 @@ let ActorsPeople = () => {
         null,
         ActorsData.map((item, i) => React.createElement(
             "div",
-            { className: "col-md-3 col-xs-6 col-sm-6 actor-block", key: i, "data-id": item.actor_id },
+            { className: "col-md-3 col-xs-6 col-sm-6 actor-block", key: i },
             React.createElement(
                 "div",
                 { className: "actor-img-container" },
@@ -34,17 +35,31 @@ let ActorsPeople = () => {
 
 let Direction = () => {
     return React.createElement(
-        "h1",
+        React.Fragment,
         null,
-        "\u0414\u0438\u0440\u0435\u043A\u0446\u0456\u044F"
-    );
-};
-
-let PeopleTheater = () => {
-    return React.createElement(
-        "h1",
-        null,
-        "\u041B\u044E\u0434\u0438 \u0442\u0435\u0430\u0442\u0440\u0443"
+        DirectionsData.map((item, i) => React.createElement(
+            "div",
+            { className: "col-md-3 col-xs-6 col-sm-6 direction-block", key: i },
+            React.createElement(
+                "h1",
+                { className: "direction-name" },
+                item.name_management
+            ),
+            React.createElement(
+                "div",
+                { className: "direction-img-container" },
+                React.createElement("img", { src: item.image, alt: "", className: "direction-img" })
+            ),
+            React.createElement(
+                "div",
+                { className: "direction-name-container" },
+                React.createElement(
+                    "p",
+                    { className: "direction-position" },
+                    item.posts
+                )
+            )
+        ))
     );
 };
 
@@ -56,7 +71,7 @@ let PeopleTheater = () => {
         cache: false,
         async: false,
         success: function (result) {
-            dataParser(result);
+            actorsParser(result);
         },
         error: function (error) {
             return error;
@@ -64,9 +79,31 @@ let PeopleTheater = () => {
     });
 })();
 
-function dataParser(result) {
+function actorsParser(result) {
     for (let i = 0; i < result.result.length; i++) {
         ActorsData.push(result.result[i]);
+    }
+}
+
+(function () {
+    $.ajax({
+        url: '/directionList',
+        method: 'GET',
+        contentType: "application/json; charset=utf-8",
+        cache: false,
+        async: false,
+        success: function (result) {
+            directionParser(result);
+        },
+        error: function (error) {
+            return error;
+        }
+    });
+})();
+
+function directionParser(result) {
+    for (let i = 0; i < result.result.length; i++) {
+        DirectionsData.push(result.result[i]);
     }
 }
 
@@ -79,7 +116,6 @@ class Actors extends React.Component {
 
         this.showActors = this.showActors.bind(this);
         this.showDirection = this.showDirection.bind(this);
-        this.showPeopleTheater = this.showPeopleTheater.bind(this);
     }
 
     showActors() {
@@ -90,11 +126,6 @@ class Actors extends React.Component {
     showDirection() {
         this.setState({
             collective: 1
-        });
-    }
-    showPeopleTheater() {
-        this.setState({
-            collective: 2
         });
     }
 
@@ -116,22 +147,22 @@ class Actors extends React.Component {
                 "div",
                 { className: "row" },
                 React.createElement(
+                    "h1",
+                    null,
+                    "\u0421\u041A\u041B\u0410\u0414 \u0422\u0415\u0410\u0422\u0420\u0423"
+                ),
+                React.createElement(
                     "div",
                     { className: "actors-button-container" },
                     React.createElement(
                         "button",
-                        { className: "btn btn-primary", onClick: this.showActors },
+                        { className: "btn btn-primary btn-actors", onClick: this.showActors },
                         "\u0422\u0440\u0443\u043F\u0430"
                     ),
                     React.createElement(
                         "button",
-                        { className: "btn btn-primary", onClick: this.showDirection },
+                        { className: "btn btn-primary btn-actors", onClick: this.showDirection },
                         "\u0414\u0438\u0440\u0435\u043A\u0446\u0456\u044F \u0442\u0430 \u0445\u0443\u0434\u043E\u0436\u043D\u0454 \u043A\u0435\u0440\u0456\u0432\u043D\u0438\u0446\u0442\u0432\u043E"
-                    ),
-                    React.createElement(
-                        "button",
-                        { className: "btn btn-primary", onClick: this.showPeopleTheater },
-                        "\u041B\u044E\u0434\u0438 \u0442\u0435\u0430\u0442\u0440\u0443"
                     )
                 ),
                 people_in_theater

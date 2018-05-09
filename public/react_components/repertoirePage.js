@@ -63,17 +63,31 @@ let Children = () => {
                 { className: 'col-md-6 repertory-show-element' },
                 React.createElement(
                     'div',
-                    { className: 'repertory-container-show-name' },
+                    { className: 'repertory-info-container' },
                     React.createElement(
-                        'h1',
-                        { className: 'repertory-show-name' },
-                        item.the_name_of_the_play
+                        'div',
+                        { className: 'repertory-container-show-name' },
+                        React.createElement(
+                            'h1',
+                            { className: 'repertory-show-name' },
+                            item.the_name_of_the_play
+                        )
+                    ),
+                    React.createElement(
+                        'div',
+                        { className: 'repertory-container-show-img' },
+                        React.createElement('img', { src: item.image_main, alt: '', className: 'repertory-show-img' })
+                    ),
+                    React.createElement(
+                        'div',
+                        { className: 'repertory-duration-container' },
+                        React.createElement(
+                            'h3',
+                            { className: 'repertory-duration' },
+                            '\u0422\u0440\u0438\u0432\u0430\u043B\u0456\u0441\u0442\u044C - ',
+                            item.duration
+                        )
                     )
-                ),
-                React.createElement(
-                    'div',
-                    { className: 'repertory-container-show-img' },
-                    React.createElement('img', { src: item.image_main, alt: '', className: 'repertory-show-img' })
                 )
             )
         ))
@@ -92,17 +106,31 @@ let Adult = () => {
                 { className: 'col-md-6 repertory-show-element' },
                 React.createElement(
                     'div',
-                    { className: 'repertory-container-show-name' },
+                    { className: 'repertory-info-container' },
                     React.createElement(
-                        'h1',
-                        { className: 'repertory-show-name' },
-                        item.the_name_of_the_play
+                        'div',
+                        { className: 'repertory-container-show-name' },
+                        React.createElement(
+                            'h1',
+                            { className: 'repertory-show-name' },
+                            item.the_name_of_the_play
+                        )
+                    ),
+                    React.createElement(
+                        'div',
+                        { className: 'repertory-container-show-img' },
+                        React.createElement('img', { src: item.image_main, alt: '', className: 'repertory-show-img' })
+                    ),
+                    React.createElement(
+                        'div',
+                        { className: 'repertory-duration-container' },
+                        React.createElement(
+                            'h3',
+                            { className: 'repertory-duration' },
+                            '\u0422\u0440\u0438\u0432\u0430\u043B\u0456\u0441\u0442\u044C - ',
+                            item.duration
+                        )
                     )
-                ),
-                React.createElement(
-                    'div',
-                    { className: 'repertory-container-show-img' },
-                    React.createElement('img', { src: item.image_main, alt: '', className: 'repertory-show-img' })
                 )
             )
         ))
@@ -154,12 +182,12 @@ class AllPerformance extends React.Component {
                 { className: 'button-age-category-container' },
                 React.createElement(
                     'button',
-                    { className: 'btn btn-primary', onClick: this.AdultCategory },
+                    { className: 'btn btn-primary btn-repertoire', onClick: this.AdultCategory },
                     '\u0414\u043E\u0440\u043E\u0441\u043B\u0456'
                 ),
                 React.createElement(
                     'button',
-                    { className: 'btn btn-primary', onClick: this.ChildCategory },
+                    { className: 'btn btn-primary btn-repertoire', onClick: this.ChildCategory },
                     '\u0414\u0456\u0442\u0438'
                 )
             ),

@@ -10,6 +10,7 @@ server.use(bodyParser.json());
 
 
 server.get('/actorsList',require('./controllers/actors-data.js'));
+server.get('/directionList',require('./controllers/direction-data.js'));
 server.get('/repertoireList',require('./controllers/repertoire-data.js'));
 
 server.get('*', (req, res) => {
@@ -18,4 +19,4 @@ server.get('*', (req, res) => {
 
 
 
-server.listen(3001);
+server.listen(3000);

@@ -11,12 +11,13 @@ let Navbar = require('./components/navbar').Navbar;
 
 /*--pages--*/
 
-let Poster = require('./posterPage').Poster;
+let MainPosterContainer = require('./posterPage').MainPosterContainer;
 let Actors = require('./actorsPage').Actors;
 let Repertory = require('./repertoirePage').Repertory;
 let Story = require('./storyPage').Story;
 let News = require('./newsPage').News;
 let Contacts = require('./contactsPage').Contacts;
+let Ticket = require('./ticketPage').Ticket;
 
 class MainComponent extends React.Component {
 
@@ -41,12 +42,13 @@ class MainComponent extends React.Component {
                         React.createElement(
                             'div',
                             { className: 'main-pages-container' },
-                            React.createElement(Route, { exact: true, path: '/', component: Poster }),
+                            React.createElement(Route, { exact: true, path: '/', component: MainPosterContainer }),
                             React.createElement(Route, { exact: true, path: '/actors', component: Actors }),
                             React.createElement(Route, { path: '/repertoire', component: Repertory }),
                             React.createElement(Route, { exact: true, path: '/story', component: Story }),
                             React.createElement(Route, { exact: true, path: '/news', component: News }),
-                            React.createElement(Route, { exact: true, path: '/contacts', component: Contacts })
+                            React.createElement(Route, { exact: true, path: '/contacts', component: Contacts }),
+                            React.createElement(Route, { exact: true, path: '/tickets', component: Ticket })
                         )
                     )
                 )

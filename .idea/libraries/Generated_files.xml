@@ -12,12 +12,13 @@
         <item url="file://$PROJECT_DIR$/public/react_components/posterPage.js" />
         <item url="file://$PROJECT_DIR$/public/react_components/repertoirePage.js" />
         <item url="file://$PROJECT_DIR$/public/react_components/storyPage.js" />
+        <item url="file://$PROJECT_DIR$/public/react_components/ticketPage.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/public/react_components/main.js" />
-      <root url="file://$PROJECT_DIR$/public/react_components/test.js" />
       <root url="file://$PROJECT_DIR$/public/react_components/home_page.js" />
+      <root url="file://$PROJECT_DIR$/public/react_components/test.js" />
       <root url="file://$PROJECT_DIR$/public/react_components/AboutPerformancePage.js" />
       <root url="file://$PROJECT_DIR$/public/react_components/actorsPage.js" />
       <root url="file://$PROJECT_DIR$/public/react_components/app.js" />
@@ -28,6 +29,7 @@
       <root url="file://$PROJECT_DIR$/public/react_components/posterPage.js" />
       <root url="file://$PROJECT_DIR$/public/react_components/repertoirePage.js" />
       <root url="file://$PROJECT_DIR$/public/react_components/storyPage.js" />
+      <root url="file://$PROJECT_DIR$/public/react_components/ticketPage.js" />
     </CLASSES>
     <SOURCES />
   </library>

@@ -1,0 +1,29 @@
+.carousel-one-img {
+     width: 1300px;
+
+ }
+
+.item{
+    height: 500px;
+}
+
+.carousel-caption{
+    background-color: rgba(0, 0, 0, 0.9);
+    left:0;
+    width: 100%;
+}
+.order-ticket-container{
+    text-align: center;
+    margin-bottom: 150px;
+}
+.poster-button-container{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.btn-month{
+    margin: 30px;
+}
+.repertory-show-name{
+    font-size: 23px;
+    color:black;
+}

@@ -1,10 +1,9 @@
-/*body {
-    background-color: antiquewhite;
+body {
+    background-color: #701912;
     background-repeat: no-repeat;
-    background-size: 1370px 2500px;
-    background-position: inherit;
+    background-blend-mode: luminosity;
 
-}*/
+}
 .actor-img{
     height: 200px;
     margin-top: 25px;
@@ -15,6 +14,31 @@
     font-size: 20px;
     margin-left: 35px;
     color: black;
+}
 
 
+.direction-img{
+    height: 250px;
+    width: 230px;
+    margin-top: 25px;
+    margin-left: 35px;
+}
+.direction-name{
+    padding-top: 40px;
+    font-size: 20px;
+    margin-left: 35px;
+    color: black;
+}
+
+.direction-block{
+    height:400px;
+}
+
+.actors-button-container{
+    text-align: center;
+}
+
+.btn-actors{
+    margin: 30px;
+    width: 250px;
 }

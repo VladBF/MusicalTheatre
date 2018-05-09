@@ -73,11 +73,16 @@ let Children = () =>{
                     child.map((item,i) =>
                         <Link to={`/repertoire/${item.the_name_of_the_play}`} key={i} onClick={this.UpScroll}>
                             <div className="col-md-6 repertory-show-element">
-                                <div className="repertory-container-show-name">
-                                    <h1 className="repertory-show-name">{item.the_name_of_the_play}</h1>
-                                </div>
-                                <div className="repertory-container-show-img">
-                                    <img src={item.image_main} alt="" className="repertory-show-img"/>
+                                <div className="repertory-info-container">
+                                    <div className="repertory-container-show-name">
+                                        <h1 className="repertory-show-name">{item.the_name_of_the_play}</h1>
+                                    </div>
+                                    <div className="repertory-container-show-img">
+                                        <img src={item.image_main} alt="" className="repertory-show-img"/>
+                                    </div>
+                                    <div className="repertory-duration-container">
+                                        <h3 className="repertory-duration">Тривалість - {item.duration}</h3>
+                                    </div>
                                 </div>
                             </div>
                         </Link>
@@ -96,11 +101,16 @@ let Adult = () => {
                 adult.map((item,i) =>
                     <Link to={`/repertoire/${item.the_name_of_the_play}`} key={i} onClick={this.UpScroll}>
                         <div className="col-md-6 repertory-show-element">
-                            <div className="repertory-container-show-name">
-                                <h1 className="repertory-show-name">{item.the_name_of_the_play}</h1>
-                            </div>
-                            <div className="repertory-container-show-img">
-                                <img src={item.image_main} alt="" className="repertory-show-img"/>
+                            <div className="repertory-info-container">
+                                <div className="repertory-container-show-name">
+                                    <h1 className="repertory-show-name">{item.the_name_of_the_play}</h1>
+                                </div>
+                                <div className="repertory-container-show-img">
+                                    <img src={item.image_main} alt="" className="repertory-show-img"/>
+                                </div>
+                                <div className="repertory-duration-container">
+                                    <h3 className="repertory-duration">Тривалість - {item.duration}</h3>
+                                </div>
                             </div>
                         </div>
                     </Link>
@@ -156,8 +166,8 @@ class  AllPerformance extends React.Component{
             <div className="col-md-12 col-xs-12 col-sm-12 all-shows-container">
 
                     <div className="button-age-category-container">
-                        <button className="btn btn-primary" onClick={this.AdultCategory}>Дорослі</button>
-                        <button className="btn btn-primary" onClick={this.ChildCategory}>Діти</button>
+                        <button className="btn btn-primary btn-repertoire" onClick={this.AdultCategory}>Дорослі</button>
+                        <button className="btn btn-primary btn-repertoire" onClick={this.ChildCategory}>Діти</button>
                     </div>
 
                     {choiceCategory};

@@ -7,12 +7,20 @@ class Navbar extends React.Component {
 
     constructor(props) {
         super(props);
+
+        this.ReloadScript = this.ReloadScript.bind(this);
+    }
+
+    ReloadScript() {
+
+        let carousel = $('#carousel').detach();
+        $('body').append('<script src="/js/carousel.js" id="carousel"></script>');
     }
 
     render() {
         return React.createElement(
             'div',
-            { className: 'container', id: 'navbar' },
+            { className: 'container main-container', id: 'navbar' },
             React.createElement(
                 'div',
                 { className: 'row' },
@@ -24,49 +32,13 @@ class Navbar extends React.Component {
                         { className: 'container' },
                         React.createElement(
                             'div',
-                            { className: 'collapse navbar-collapse', id: 'responsive-menu' },
+                            { className: 'collapse navbar-collapse navba-children-main-container', id: 'responsive-menu' },
                             React.createElement(
                                 'ul',
-                                { className: 'nav navbar-nav' },
+                                { className: 'nav navbar-nav navbar-list' },
                                 React.createElement(
                                     'li',
-                                    null,
-                                    React.createElement(
-                                        Link,
-                                        { to: '/' },
-                                        '\u0410\u0444\u0456\u0448\u0430'
-                                    )
-                                ),
-                                React.createElement(
-                                    'li',
-                                    null,
-                                    React.createElement(
-                                        Link,
-                                        { to: '/actors' },
-                                        '\u0421\u043A\u043B\u0430\u0434 \u0442\u0435\u0430\u0442\u0440\u0443'
-                                    )
-                                ),
-                                React.createElement(
-                                    'li',
-                                    null,
-                                    React.createElement(
-                                        Link,
-                                        { to: '/repertoire' },
-                                        '\u0420\u0435\u043F\u0435\u0440\u0442\u0443\u0430\u0440'
-                                    )
-                                ),
-                                React.createElement(
-                                    'li',
-                                    null,
-                                    React.createElement(
-                                        Link,
-                                        { to: '/story' },
-                                        '\u0406\u0441\u0442\u043E\u0440\u0456\u044F \u0422\u0435\u0430\u0442\u0440\u0443'
-                                    )
-                                ),
-                                React.createElement(
-                                    'li',
-                                    null,
+                                    { className: 'navbar-links' },
                                     React.createElement(
                                         Link,
                                         { to: '/news' },
@@ -75,7 +47,56 @@ class Navbar extends React.Component {
                                 ),
                                 React.createElement(
                                     'li',
-                                    null,
+                                    { className: 'navbar-links' },
+                                    React.createElement(
+                                        Link,
+                                        { to: '/actors' },
+                                        '\u0421\u043A\u043B\u0430\u0434 \u0442\u0435\u0430\u0442\u0440\u0443'
+                                    )
+                                ),
+                                React.createElement(
+                                    'li',
+                                    { className: 'navbar-links' },
+                                    React.createElement(
+                                        Link,
+                                        { to: '/repertoire' },
+                                        '\u0420\u0435\u043F\u0435\u0440\u0442\u0443\u0430\u0440'
+                                    )
+                                ),
+                                React.createElement(
+                                    'li',
+                                    { className: 'navbar-links', onClick: this.ReloadScript },
+                                    React.createElement(
+                                        Link,
+                                        { to: '/' },
+                                        React.createElement(
+                                            'div',
+                                            { className: 'navbar-mask-container' },
+                                            React.createElement('img', { src: '../../image/mask.png', alt: '', className: 'mask' })
+                                        )
+                                    )
+                                ),
+                                React.createElement(
+                                    'li',
+                                    { className: 'navbar-links' },
+                                    React.createElement(
+                                        Link,
+                                        { to: '/story' },
+                                        '\u0406\u0441\u0442\u043E\u0440\u0456\u044F \u0422\u0435\u0430\u0442\u0440\u0443'
+                                    )
+                                ),
+                                React.createElement(
+                                    'li',
+                                    { className: 'navbar-links' },
+                                    React.createElement(
+                                        Link,
+                                        { to: '/tickets' },
+                                        '\u041A\u0432\u0438\u0442\u043A\u0438'
+                                    )
+                                ),
+                                React.createElement(
+                                    'li',
+                                    { className: 'navbar-links' },
                                     React.createElement(
                                         Link,
                                         { to: '/contacts' },

@@ -1,0 +1,30 @@
+.floor-plan1-img{
+    width: 540px;
+    height: 622px;
+}
+.floor-plan2-img{
+    width: 523px;
+    height: 567px;
+}
+
+.price-info-container{
+    /*padding-top: 0px;
+    padding-bottom: 3px;*/
+    background: rgba(176, 176, 176, 0.5);
+    margin-bottom: 20px;
+    width: 60%;
+    height: 100px;
+    display: block;
+    left: 20%;
+    position: relative;
+
+}
+.price{
+    color:rgba(84, 6, 6, 1);
+}
+
+.price-name{
+    padding-top: 12px;
+    font-size: 23px;
+
+}

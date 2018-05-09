@@ -4,6 +4,7 @@ let React = require('react');
 
 
 let ActorsData = [];
+let DirectionsData = [];
 
 
 let ActorsPeople = () => {
@@ -11,9 +12,10 @@ let ActorsPeople = () => {
         <React.Fragment>
             {
                 ActorsData.map((item,i) =>
-                    <div className="col-md-3 col-xs-6 col-sm-6 actor-block" key={i} data-id={item.actor_id}>
+                    <div className="col-md-3 col-xs-6 col-sm-6 actor-block" key={i} >
                         <div className="actor-img-container">
                             <img src={item.image} alt="" className="actor-img"/>
+
                         </div>
                         <div className="actor-name-container">
                             <p className="actor-position">
@@ -34,15 +36,29 @@ let ActorsPeople = () => {
 
 let Direction = () => {
     return(
-        <h1>Дирекція</h1>
+        <React.Fragment>
+            {
+                DirectionsData.map((item,i) =>
+                    <div className="col-md-3 col-xs-6 col-sm-6 direction-block" key={i}>
+                        <h1 className="direction-name">
+                            {item.name_management}
+                        </h1>
+                        <div className="direction-img-container">
+                            <img src={item.image} alt="" className="direction-img"/>
+                        </div>
+                        <div className="direction-name-container">
+                            <p className="direction-position">
+                                {item.posts}
+                            </p>
+                        </div>
+                    </div>
+                )
+            }
+        </React.Fragment>
     )
 };
 
-let PeopleTheater = () => {
-    return(
-        <h1>Люди театру</h1>
-    )
-};
+
 
 
 
@@ -54,7 +70,7 @@ let PeopleTheater = () => {
         cache: false,
         async: false,
         success: function (result) {
-            dataParser(result);
+            actorsParser(result);
         },
         error: function (error) {
             return error;
@@ -63,9 +79,37 @@ let PeopleTheater = () => {
 
 })();
 
-function dataParser(result){
+
+
+function actorsParser(result){
     for(let i = 0; i < result.result.length; i++){
         ActorsData.push(result.result[i]);
+    }
+}
+
+
+
+(function () {
+    $.ajax({
+        url:'/directionList',
+        method:'GET',
+        contentType: "application/json; charset=utf-8",
+        cache: false,
+        async: false,
+        success: function (result) {
+            directionParser(result);
+        },
+        error: function (error) {
+            return error;
+        }
+    });
+
+})();
+
+
+function directionParser(result){
+    for(let i = 0; i < result.result.length; i++){
+        DirectionsData.push(result.result[i]);
     }
 }
 
@@ -79,7 +123,7 @@ class Actors extends React.Component{
 
         this.showActors = this.showActors.bind(this);
         this.showDirection = this.showDirection.bind(this);
-        this.showPeopleTheater = this.showPeopleTheater.bind(this);
+
     }
 
     showActors(){
@@ -92,11 +136,7 @@ class Actors extends React.Component{
             collective:1
         })
     }
-    showPeopleTheater(){
-        this.setState({
-            collective:2
-        })
-    }
+
 
     render(){
 
@@ -114,10 +154,10 @@ class Actors extends React.Component{
         return(
             <div className="container main-actorsPage-container">
                 <div className="row">
+                    <h1>СКЛАД ТЕАТРУ</h1>
                     <div className="actors-button-container">
-                        <button className="btn btn-primary" onClick={this.showActors}>Трупа</button>
-                        <button className="btn btn-primary" onClick={this.showDirection}>Дирекція та художнє керівництво</button>
-                        <button className="btn btn-primary" onClick={this.showPeopleTheater}>Люди театру</button>
+                        <button className="btn btn-primary btn-actors" onClick={this.showActors}>Трупа</button>
+                        <button className="btn btn-primary btn-actors" onClick={this.showDirection}>Дирекція та художнє керівництво</button>
                     </div>
 
                     {people_in_theater}
