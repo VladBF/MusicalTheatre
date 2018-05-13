@@ -1,3 +1,35 @@
 .contact-main-container{
     text-align: center;
 }
+
+.contact-name-info {
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+}
+.contact-main-name {
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    margin-top: 50px;
+}
+.contact-info {
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+}
+.ornament-2 {
+    width: 50px;
+    margin-top: -10px;
+}
+.ornament-4 {
+    width: 50px;
+    margin-bottom: -18px;
+}
+.ornament-6 {
+    width: 50px;
+    margin-bottom: -40px;
+}

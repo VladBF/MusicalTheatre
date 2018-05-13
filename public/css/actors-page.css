@@ -2,36 +2,79 @@ body {
     background-color: #701912;
     background-repeat: no-repeat;
     background-blend-mode: luminosity;
-
 }
 .actor-img{
     height: 200px;
-    margin-top: 25px;
-    margin-left: 35px;
+    margin-left: 55px;
+    border: 7px groove #f8a056;
+
+
 }
 .actor-name{
-    height: 100px;
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    margin-top: -15px;
     font-size: 20px;
-    margin-left: 35px;
-    color: black;
+    margin-left: 15px;
 }
-
+.ornament-top-actor {
+    width:250px;
+    height: 20px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+.ornament-bottom-actor {
+    width: 250px;
+    height: 10px;
+    margin-left: 30px;
+}
+.container-actor-posts {
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.ornament-posts {
+    width: 180px;
+    height: 8px;
+    margin-top: -27px;
+}
 
 .direction-img{
-    height: 250px;
-    width: 230px;
-    margin-top: 25px;
+    height: 230px;
+    width: 200px;
+    margin-top: 65px;
     margin-left: 35px;
+    border: 7px groove #f8a056;
+
 }
 .direction-name{
-    padding-top: 40px;
     font-size: 20px;
-    margin-left: 35px;
-    color: black;
+    margin-left: 15px;
+    margin-top: -20px;
+}
+.direction-position {
+    font-size: 15px;
+    margin-left: 45px;
+
 }
 
 .direction-block{
-    height:400px;
+    height:440px;
+    text-align: center;
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    margin-top: -60px;
+
 }
 
 .actors-button-container{
@@ -39,6 +82,50 @@ body {
 }
 
 .btn-actors{
-    margin: 30px;
-    width: 250px;
+    background: url(../image/ornament/ornament_button_1.png);
+    border: none;
+    width: 380px;
+    height: 50px;
+    background-size: 100% 100%;
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 40px;
+}
+.btn-actors:hover {
+    background: url(../image/ornament/ornament_button_2.png);
+    border: none;
+    width: 380px;
+    height: 50px;
+    background-size: 100% 100%;
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+
+}
+.ornament-top-director {
+    width:230px;
+    height: 20px;
+    margin-left: 30px;
+    margin-bottom: -120px;
+
+}
+.ornament-bottom-director {
+    width:250px;
+    height: 10px;
+    margin-left: 25px;
+
+}
+.ornament-posts-director {
+    width:200px;
+    height: 10px;
+    margin-left: 25px;
+    margin-top: -30px;
+
 }

@@ -20,13 +20,14 @@ class Contacts extends React.Component {
                         { className: "contact-main-name" },
                         "\u041A\u041E\u041D\u0422\u0410\u041A\u0422\u0418"
                     ),
-                    React.createElement("hr", null),
+                    React.createElement("img", { src: "../../image/ornament/ornament_5_2.png", alt: "", className: "ornament-gold-top" }),
                     React.createElement(
                         "div",
                         { className: "contact-info-container" },
                         React.createElement(
                             "div",
                             { className: "col-md-6" },
+                            React.createElement("img", { src: "../../image/ornament/ornament_4.png", alt: "", className: "ornament-4" }),
                             React.createElement(
                                 "h2",
                                 { className: "contact-name-info" },
@@ -36,11 +37,13 @@ class Contacts extends React.Component {
                                 "h2",
                                 { className: "contact-info" },
                                 "+38-044-425-30-15"
-                            )
+                            ),
+                            React.createElement("img", { src: "../../image/ornament/ornament_2.png", alt: "", className: "ornament-2" })
                         ),
                         React.createElement(
                             "div",
                             { className: "col-md-6" },
+                            React.createElement("img", { src: "../../image/ornament/ornament_4.png", alt: "", className: "ornament-4" }),
                             React.createElement(
                                 "h2",
                                 { className: "contact-name-info" },
@@ -55,13 +58,13 @@ class Contacts extends React.Component {
                                 "h2",
                                 { className: "contact-info" },
                                 "+38-099-202-31-32"
-                            )
+                            ),
+                            React.createElement("img", { src: "../../image/ornament/ornament_2.png", alt: "", className: "ornament-2" })
                         ),
-                        React.createElement("br", null),
-                        React.createElement("br", null),
                         React.createElement(
                             "div",
                             { className: "col-md-6" },
+                            React.createElement("img", { src: "../../image/ornament/ornament_4.png", alt: "", className: "ornament-4" }),
                             React.createElement(
                                 "h2",
                                 { className: "contact-name-info" },
@@ -71,11 +74,13 @@ class Contacts extends React.Component {
                                 "h2",
                                 { className: "contact-info" },
                                 "+38-044-\uFEFF501-10-44"
-                            )
+                            ),
+                            React.createElement("img", { src: "../../image/ornament/ornament_2.png", alt: "", className: "ornament-2" })
                         ),
                         React.createElement(
                             "div",
                             { className: "col-md-6" },
+                            React.createElement("img", { src: "../../image/ornament/ornament_4.png", alt: "", className: "ornament-4" }),
                             React.createElement(
                                 "h2",
                                 { className: "contact-name-info" },
@@ -85,13 +90,15 @@ class Contacts extends React.Component {
                                 "h2",
                                 { className: "contact-info" },
                                 "+38-044-\uFEFF425-87-66"
-                            )
+                            ),
+                            React.createElement("img", { src: "../../image/ornament/ornament_2.png", alt: "", className: "ornament-2" })
                         ),
-                        React.createElement("hr", null),
+                        React.createElement("img", { src: "../../image/ornament/ornament_5.png", alt: "", className: "ornament-gold" }),
+                        React.createElement("img", { src: "../../image/ornament/ornament_5_2.png", alt: "", className: "ornament-gold-top" }),
                         React.createElement(
                             "div",
                             { className: "col-md-12" },
-                            React.createElement("hr", null),
+                            React.createElement("img", { src: "../../image/ornament/ornament_4.png", alt: "", className: "ornament-4" }),
                             React.createElement(
                                 "h2",
                                 { className: "contact-name-info" },
@@ -102,55 +109,55 @@ class Contacts extends React.Component {
                                 { className: "contact-info" },
                                 "+38-044-\uFEFF425-87-66"
                             ),
-                            React.createElement("hr", null)
-                        )
+                            React.createElement("img", { src: "../../image/ornament/ornament_2.png", alt: "", className: "ornament-2" })
+                        ),
+                        React.createElement("img", { src: "../../image/ornament/ornament_5.png", alt: "", className: "ornament-gold" })
                     ),
-                    React.createElement("hr", null),
+                    React.createElement("img", { src: "../../image/ornament/ornament_5_2.png", alt: "", className: "ornament-gold-top" }),
                     React.createElement(
                         "div",
                         { className: "col-md-12" },
                         React.createElement(
                             "div",
                             { className: "col-md-6" },
+                            React.createElement("img", { src: "../../image/ornament/ornament_4.png", alt: "", className: "ornament-6" }),
                             React.createElement(
                                 "h1",
                                 { className: "contact-main-name" },
-                                "\u0410\u0414\u0420\u0415\u0421\u0410"
+                                "\u0410\u0434\u0440\u0435\u0441\u0430"
                             ),
                             React.createElement(
                                 "h2",
                                 { className: "contact-name-info" },
                                 "\u0432\u0443\u043B\u0438\u0446\u044F \u041A\u0430\u0432\u0430\u043B\u0435\u0440\u0456\u0439\u0441\u044C\u043A\u0430, 8"
-                            )
+                            ),
+                            React.createElement("img", { src: "../../image/ornament/ornament_2.png", alt: "", className: "ornament-2" })
                         ),
                         React.createElement(
                             "div",
                             { className: "col-md-6" },
+                            React.createElement("img", { src: "../../image/ornament/ornament_4.png", alt: "", className: "ornament-6" }),
                             React.createElement(
                                 "h1",
                                 { className: "contact-main-name" },
-                                "\u0415\u041B\u0415\u041A\u0422\u0420\u041E\u041D\u0410 \u0410\u0414\u0420\u0415\u0421\u0410"
+                                "\u0415\u043B\u0435\u043A\u0442\u0440\u043E\u043D\u0430 \u0410\u0434\u0440\u0435\u0441\u0430"
                             ),
                             React.createElement(
                                 "h2",
                                 { className: "contact-name-info" },
-                                "email:"
+                                "email:tmuzicnij@gmail.com"
                             ),
-                            React.createElement(
-                                "h2",
-                                { className: "contact-info" },
-                                "benjamin.vh25@gmail.com"
-                            )
+                            React.createElement("img", { src: "../../image/ornament/ornament_2.png", alt: "", className: "ornament-2" })
                         )
                     ),
                     React.createElement(
                         "div",
                         { className: "col-md-12" },
-                        React.createElement("hr", null),
+                        React.createElement("img", { src: "../../image/ornament/ornament_5.png", alt: "", className: "ornament-gold" }),
                         React.createElement(
                             "h1",
                             { className: "contact-main-name" },
-                            "\u041A\u0410\u0420\u0422\u0410"
+                            "\u041A\u0430\u0440\u0442\u0430"
                         ),
                         React.createElement(
                             "div",

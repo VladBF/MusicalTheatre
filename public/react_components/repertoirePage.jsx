@@ -77,12 +77,15 @@ let Children = () =>{
                                     <div className="repertory-container-show-name">
                                         <h1 className="repertory-show-name">{item.the_name_of_the_play}</h1>
                                     </div>
+                                    <img src="../../image/ornament/ornament_5_2.png" alt="" className="ornament-play-top"/>
                                     <div className="repertory-container-show-img">
                                         <img src={item.image_main} alt="" className="repertory-show-img"/>
                                     </div>
+                                    <img src="../../image/ornament/ornament_9.png" alt="" className="ornament-play-bottom"/>
                                     <div className="repertory-duration-container">
                                         <h3 className="repertory-duration">Тривалість - {item.duration}</h3>
                                     </div>
+                                    <img src="../../image/ornament/ornament_1_2.png" alt="" className="ornament-play-center"/>
                                 </div>
                             </div>
                         </Link>
@@ -105,12 +108,15 @@ let Adult = () => {
                                 <div className="repertory-container-show-name">
                                     <h1 className="repertory-show-name">{item.the_name_of_the_play}</h1>
                                 </div>
+                                <img src="../../image/ornament/ornament_5_2.png" alt="" className="ornament-play-top"/>
                                 <div className="repertory-container-show-img">
                                     <img src={item.image_main} alt="" className="repertory-show-img"/>
                                 </div>
+                                <img src="../../image/ornament/ornament_9.png" alt="" className="ornament-play-bottom"/>
                                 <div className="repertory-duration-container">
                                     <h3 className="repertory-duration">Тривалість - {item.duration}</h3>
                                 </div>
+                                <img src="../../image/ornament/ornament_1_2.png" alt="" className="ornament-play-center"/>
                             </div>
                         </div>
                     </Link>
@@ -166,8 +172,8 @@ class  AllPerformance extends React.Component{
             <div className="col-md-12 col-xs-12 col-sm-12 all-shows-container">
 
                     <div className="button-age-category-container">
-                        <button className="btn btn-primary btn-repertoire" onClick={this.AdultCategory}>Дорослі</button>
-                        <button className="btn btn-primary btn-repertoire" onClick={this.ChildCategory}>Діти</button>
+                        <button className="btn-repertoire" onClick={this.AdultCategory}>Дорослі</button>
+                        <button className="btn-repertoire" onClick={this.ChildCategory}>Діти</button>
                     </div>
 
                     {choiceCategory};

@@ -13,15 +13,16 @@ let ActorsPeople = () => {
             {
                 ActorsData.map((item,i) =>
                     <div className="col-md-3 col-xs-6 col-sm-6 actor-block" key={i} >
-                        <div className="actor-img-container">
+                        <div className="actor-img-container container-wrapper">
+                            <img src="../../image/ornament/ornament_6.png" alt="" className="ornament-top-actor"/>
                             <img src={item.image} alt="" className="actor-img"/>
-
+                            <img src="../../image/ornament/ornament_8.png" alt="" className="ornament-bottom-actor"/>
                         </div>
-                        <div className="actor-name-container">
+                        <div className="actor-name-container container-actor-posts">
                             <p className="actor-position">
                                 {item.name_position}
                             </p>
-
+                            <img src="../../image/ornament/ornament_9.png" alt="" className="ornament-posts"/>
 
                             <h1 className="actor-name">
                                 {item.name_actor}
@@ -40,17 +41,23 @@ let Direction = () => {
             {
                 DirectionsData.map((item,i) =>
                     <div className="col-md-3 col-xs-6 col-sm-6 direction-block" key={i}>
-                        <h1 className="direction-name">
-                            {item.name_management}
-                        </h1>
+                        <img src="../../image/ornament/ornament_6.png" alt="" className="ornament-top-director"/>
                         <div className="direction-img-container">
                             <img src={item.image} alt="" className="direction-img"/>
+                            <img src="../../image/ornament/ornament_8.png" alt="" className="ornament-bottom-director"/>
                         </div>
                         <div className="direction-name-container">
                             <p className="direction-position">
                                 {item.posts}
                             </p>
+                            <img src="../../image/ornament/ornament_9.png" alt="" className="ornament-posts-director"/>
                         </div>
+                        <div className="director-name">
+                            <h1 className="direction-name">
+                                {item.name_management}
+                            </h1>
+                        </div>
+
                     </div>
                 )
             }
@@ -156,8 +163,8 @@ class Actors extends React.Component{
                 <div className="row">
                     <h1>СКЛАД ТЕАТРУ</h1>
                     <div className="actors-button-container">
-                        <button className="btn btn-primary btn-actors" onClick={this.showActors}>Трупа</button>
-                        <button className="btn btn-primary btn-actors" onClick={this.showDirection}>Дирекція та художнє керівництво</button>
+                        <button className="btn-actors" onClick={this.showActors}>Трупа</button>
+                        <button className="btn-actors" onClick={this.showDirection}>Дирекція та художнє керівництво</button>
                     </div>
 
                     {people_in_theater}

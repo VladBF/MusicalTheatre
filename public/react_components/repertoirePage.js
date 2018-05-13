@@ -73,11 +73,13 @@ let Children = () => {
                             item.the_name_of_the_play
                         )
                     ),
+                    React.createElement('img', { src: '../../image/ornament/ornament_5_2.png', alt: '', className: 'ornament-play-top' }),
                     React.createElement(
                         'div',
                         { className: 'repertory-container-show-img' },
                         React.createElement('img', { src: item.image_main, alt: '', className: 'repertory-show-img' })
                     ),
+                    React.createElement('img', { src: '../../image/ornament/ornament_9.png', alt: '', className: 'ornament-play-bottom' }),
                     React.createElement(
                         'div',
                         { className: 'repertory-duration-container' },
@@ -87,7 +89,8 @@ let Children = () => {
                             '\u0422\u0440\u0438\u0432\u0430\u043B\u0456\u0441\u0442\u044C - ',
                             item.duration
                         )
-                    )
+                    ),
+                    React.createElement('img', { src: '../../image/ornament/ornament_1_2.png', alt: '', className: 'ornament-play-center' })
                 )
             )
         ))
@@ -116,11 +119,13 @@ let Adult = () => {
                             item.the_name_of_the_play
                         )
                     ),
+                    React.createElement('img', { src: '../../image/ornament/ornament_5_2.png', alt: '', className: 'ornament-play-top' }),
                     React.createElement(
                         'div',
                         { className: 'repertory-container-show-img' },
                         React.createElement('img', { src: item.image_main, alt: '', className: 'repertory-show-img' })
                     ),
+                    React.createElement('img', { src: '../../image/ornament/ornament_9.png', alt: '', className: 'ornament-play-bottom' }),
                     React.createElement(
                         'div',
                         { className: 'repertory-duration-container' },
@@ -130,7 +135,8 @@ let Adult = () => {
                             '\u0422\u0440\u0438\u0432\u0430\u043B\u0456\u0441\u0442\u044C - ',
                             item.duration
                         )
-                    )
+                    ),
+                    React.createElement('img', { src: '../../image/ornament/ornament_1_2.png', alt: '', className: 'ornament-play-center' })
                 )
             )
         ))
@@ -182,12 +188,12 @@ class AllPerformance extends React.Component {
                 { className: 'button-age-category-container' },
                 React.createElement(
                     'button',
-                    { className: 'btn btn-primary btn-repertoire', onClick: this.AdultCategory },
+                    { className: 'btn-repertoire', onClick: this.AdultCategory },
                     '\u0414\u043E\u0440\u043E\u0441\u043B\u0456'
                 ),
                 React.createElement(
                     'button',
-                    { className: 'btn btn-primary btn-repertoire', onClick: this.ChildCategory },
+                    { className: 'btn-repertoire', onClick: this.ChildCategory },
                     '\u0414\u0456\u0442\u0438'
                 )
             ),

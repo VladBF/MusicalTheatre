@@ -17,6 +17,10 @@
     display: block;
     left: 20%;
     position: relative;
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
 
 }
 .price{
@@ -27,4 +31,59 @@
     padding-top: 12px;
     font-size: 23px;
 
+}
+.main-price-name {
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    margin-top: 50px;
+
+}
+.ornament-white-top {
+    margin-bottom: -40px;
+    width: 735px;
+}
+
+.ornament-white-bottom {
+    margin-top: -45px;
+    width: 735px;
+}
+.ornament-left {
+    margin-right: 684px;
+    margin-top: -120px;
+    margin-left: -76px;
+    height: 80px;
+}
+.ornament-right {
+    margin-left: 684px;
+    margin-top: -298px;
+    margin-bottom: -140px;
+    height: 80px;
+}
+.ornament-left-children {
+    margin-right: 684px;
+    margin-top: -36px;
+    margin-left: -76px;
+    height: 80px;
+}
+.ornament-right-children {
+    margin-left: 684px;
+    margin-top: -239px;
+    margin-bottom: -140px;
+    height: 80px;
+}
+.button-ornament-1 {
+    background: url(../image/ornament/ornament_button_1.png);
+    border: none;
+    width: 330px;
+    height: 60px;
+    background-size: 100% 100%;
+}
+.button-ornament-1:hover{
+    background: url(../image/ornament/ornament_button_2.png);
+    border: none;
+    width: 330px;
+    height: 60px;
+    background-size: 100% 100%;
 }

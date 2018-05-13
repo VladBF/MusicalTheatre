@@ -1,6 +1,24 @@
+.repertory-show-name {
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+}
 .repertory-show-img{
     height: 300px;
     width: 400px;
+    border: 7px groove #f8a056;
+}
+.ornament-play-top {
+    width: 430px;
+    margin-bottom: 5px;
+}
+.ornament-play-bottom {
+    width: 430px;
+}
+.ornament-play-center {
+    text-align: center;
+    margin-top: 25px;
 }
 .repertory-show-element{
     text-align: center;
@@ -9,16 +27,43 @@
     padding: 5px;
 }
 .repertory-info-container{
-    border: 1px solid black;
+
 
 }
 .repertory-duration{
-    color: black;
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
 }
 .button-age-category-container{
     text-align: center;
 }
 .btn-repertoire{
-    width: 130px;
-    margin: 30px;
+    background: url(../image/ornament/ornament_button_1.png);
+    border: none;
+    width: 330px;
+    height: 50px;
+    background-size: 100% 100%;
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
+.btn-repertoire:hover{
+    background: url(../image/ornament/ornament_button_2.png);
+    border: none;
+    width: 330px;
+    height: 50px;
+    background-size: 100% 100%;
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+
+}
+

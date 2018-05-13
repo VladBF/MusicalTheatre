@@ -12,17 +12,20 @@ let ActorsPeople = () => {
             { className: "col-md-3 col-xs-6 col-sm-6 actor-block", key: i },
             React.createElement(
                 "div",
-                { className: "actor-img-container" },
-                React.createElement("img", { src: item.image, alt: "", className: "actor-img" })
+                { className: "actor-img-container container-wrapper" },
+                React.createElement("img", { src: "../../image/ornament/ornament_6.png", alt: "", className: "ornament-top-actor" }),
+                React.createElement("img", { src: item.image, alt: "", className: "actor-img" }),
+                React.createElement("img", { src: "../../image/ornament/ornament_8.png", alt: "", className: "ornament-bottom-actor" })
             ),
             React.createElement(
                 "div",
-                { className: "actor-name-container" },
+                { className: "actor-name-container container-actor-posts" },
                 React.createElement(
                     "p",
                     { className: "actor-position" },
                     item.name_position
                 ),
+                React.createElement("img", { src: "../../image/ornament/ornament_9.png", alt: "", className: "ornament-posts" }),
                 React.createElement(
                     "h1",
                     { className: "actor-name" },
@@ -40,15 +43,12 @@ let Direction = () => {
         DirectionsData.map((item, i) => React.createElement(
             "div",
             { className: "col-md-3 col-xs-6 col-sm-6 direction-block", key: i },
-            React.createElement(
-                "h1",
-                { className: "direction-name" },
-                item.name_management
-            ),
+            React.createElement("img", { src: "../../image/ornament/ornament_6.png", alt: "", className: "ornament-top-director" }),
             React.createElement(
                 "div",
                 { className: "direction-img-container" },
-                React.createElement("img", { src: item.image, alt: "", className: "direction-img" })
+                React.createElement("img", { src: item.image, alt: "", className: "direction-img" }),
+                React.createElement("img", { src: "../../image/ornament/ornament_8.png", alt: "", className: "ornament-bottom-director" })
             ),
             React.createElement(
                 "div",
@@ -57,6 +57,16 @@ let Direction = () => {
                     "p",
                     { className: "direction-position" },
                     item.posts
+                ),
+                React.createElement("img", { src: "../../image/ornament/ornament_9.png", alt: "", className: "ornament-posts-director" })
+            ),
+            React.createElement(
+                "div",
+                { className: "director-name" },
+                React.createElement(
+                    "h1",
+                    { className: "direction-name" },
+                    item.name_management
                 )
             )
         ))
@@ -156,12 +166,12 @@ class Actors extends React.Component {
                     { className: "actors-button-container" },
                     React.createElement(
                         "button",
-                        { className: "btn btn-primary btn-actors", onClick: this.showActors },
+                        { className: "btn-actors", onClick: this.showActors },
                         "\u0422\u0440\u0443\u043F\u0430"
                     ),
                     React.createElement(
                         "button",
-                        { className: "btn btn-primary btn-actors", onClick: this.showDirection },
+                        { className: "btn-actors", onClick: this.showDirection },
                         "\u0414\u0438\u0440\u0435\u043A\u0446\u0456\u044F \u0442\u0430 \u0445\u0443\u0434\u043E\u0436\u043D\u0454 \u043A\u0435\u0440\u0456\u0432\u043D\u0438\u0446\u0442\u0432\u043E"
                     )
                 ),
