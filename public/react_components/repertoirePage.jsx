@@ -225,7 +225,7 @@ class Repertory extends React.Component{
         return(
             <div className="container main-repertory-container">
                 <div className="row">
-                    <h1>Репертуар</h1>
+                    <h1 className="main-name">РЕПЕРТУАР</h1>
 
                     <Switch>
                         <Route exact path='/repertoire' component={AllPerformance}/>

@@ -234,8 +234,8 @@ class Repertory extends React.Component {
                 { className: 'row' },
                 React.createElement(
                     'h1',
-                    null,
-                    '\u0420\u0435\u043F\u0435\u0440\u0442\u0443\u0430\u0440'
+                    { className: 'main-name' },
+                    '\u0420\u0415\u041F\u0415\u0420\u0422\u0423\u0410\u0420'
                 ),
                 React.createElement(
                     Switch,

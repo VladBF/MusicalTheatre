@@ -12,6 +12,8 @@ server.use(bodyParser.json());
 server.get('/actorsList',require('./controllers/actors-data.js'));
 server.get('/directionList',require('./controllers/direction-data.js'));
 server.get('/repertoireList',require('./controllers/repertoire-data.js'));
+server.get('/newsList',require('./controllers/news-data.js'));
+server.get('/storyList',require('./controllers/story-data.js'));
 
 server.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'public/index.html'))

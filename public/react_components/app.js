@@ -46,7 +46,7 @@ class MainComponent extends React.Component {
                             React.createElement(Route, { exact: true, path: '/actors', component: Actors }),
                             React.createElement(Route, { path: '/repertoire', component: Repertory }),
                             React.createElement(Route, { exact: true, path: '/story', component: Story }),
-                            React.createElement(Route, { exact: true, path: '/news', component: News }),
+                            React.createElement(Route, { path: '/news', component: News }),
                             React.createElement(Route, { exact: true, path: '/contacts', component: Contacts }),
                             React.createElement(Route, { exact: true, path: '/tickets', component: Ticket })
                         )

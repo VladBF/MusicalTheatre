@@ -3,6 +3,7 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/public/react_components/AboutPerformancePage.js" />
+        <item url="file://$PROJECT_DIR$/public/react_components/aboutNews.js" />
         <item url="file://$PROJECT_DIR$/public/react_components/actorsPage.js" />
         <item url="file://$PROJECT_DIR$/public/react_components/app.js" />
         <item url="file://$PROJECT_DIR$/public/react_components/components/navbar.js" />
@@ -20,6 +21,7 @@
       <root url="file://$PROJECT_DIR$/public/react_components/home_page.js" />
       <root url="file://$PROJECT_DIR$/public/react_components/test.js" />
       <root url="file://$PROJECT_DIR$/public/react_components/AboutPerformancePage.js" />
+      <root url="file://$PROJECT_DIR$/public/react_components/aboutNews.js" />
       <root url="file://$PROJECT_DIR$/public/react_components/actorsPage.js" />
       <root url="file://$PROJECT_DIR$/public/react_components/app.js" />
       <root url="file://$PROJECT_DIR$/public/react_components/components/navbar.js" />

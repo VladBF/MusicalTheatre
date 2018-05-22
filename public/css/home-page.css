@@ -27,3 +27,82 @@
     font-size: 23px;
     color:black;
 }
+.poster-main {
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+.btn-may {
+    background: url(../image/ornament/ornament_button_1.png);
+    outline: none;
+    border: none;
+    width: 380px;
+    height: 50px;
+    background-size: 100% 100%;
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    margin-right: 150px;
+}
+.btn-may:hover {
+    background: url(../image/ornament/ornament_button_2.png);
+    outline: none;
+    border: none;
+    width: 380px;
+    height: 50px;
+    background-size: 100% 100%;
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+
+}
+.btn-june {
+    background: url(../image/ornament/ornament_button_1.png);
+    outline: none;
+    border: none;
+    width: 380px;
+    height: 50px;
+    background-size: 100% 100%;
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+}
+.btn-june:hover {
+    background: url(../image/ornament/ornament_button_2.png);
+    outline: none;
+    border: none;
+    width: 380px;
+    height: 50px;
+    background-size: 100% 100%;
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+
+}
+.glyphicon-chevron-left {
+    background-image: url(../image/ornament/ornament_7.png);
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 100px;
+    background-size: 100% 100%;
+}
+.glyphicon-chevron-right {
+    background-image: url(../image/ornament/ornament_7_2.png);
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 100px;
+    background-size: 100% 100%;
+}

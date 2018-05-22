@@ -158,7 +158,7 @@ class Actors extends React.Component {
                 { className: "row" },
                 React.createElement(
                     "h1",
-                    null,
+                    { className: "storage" },
                     "\u0421\u041A\u041B\u0410\u0414 \u0422\u0415\u0410\u0422\u0420\u0423"
                 ),
                 React.createElement(

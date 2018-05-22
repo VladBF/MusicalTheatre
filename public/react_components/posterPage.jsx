@@ -271,8 +271,8 @@ class Poster extends React.Component{
                 <div className="row">
 
                     <div className="poster-button-container">
-                        <button className="btn btn-primary btn-month" onClick={this.showMay}>Травень</button>
-                        <button className="btn btn-primary btn-month" onClick={this.showJune}>Червень</button>
+                        <button className="btn btn-primary btn-may" onClick={this.showMay}>Травень</button>
+                        <button className="btn btn-primary btn-june" onClick={this.showJune}>Червень</button>
                     </div>
 
                     {month}
@@ -313,7 +313,7 @@ class MainPosterContainer extends React.Component{
         return(
             <div className="container main-repertory-container">
                 <div className="row">
-                   <h1>АФІША</h1>
+                   <h1 className="poster-main">АФІША</h1>
 
                    <Switch>
                        <Route exact path='/' component={Poster}/>

@@ -76,14 +76,22 @@
 .button-ornament-1 {
     background: url(../image/ornament/ornament_button_1.png);
     border: none;
+    outline: none;
     width: 330px;
-    height: 60px;
+    height: 50px;
     background-size: 100% 100%;
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    margin-bottom: -20px;
 }
 .button-ornament-1:hover{
     background: url(../image/ornament/ornament_button_2.png);
     border: none;
+    outline: none;
     width: 330px;
-    height: 60px;
+    height: 50px;
     background-size: 100% 100%;
 }

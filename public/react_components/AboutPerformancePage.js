@@ -23,7 +23,8 @@ class AboutPerformance extends React.Component {
                     "h1",
                     null,
                     data[0].description_of_the_play
-                )
+                ),
+                React.createElement("div", null)
             )
         );
     }

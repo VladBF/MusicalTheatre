@@ -161,7 +161,7 @@ class Actors extends React.Component{
         return(
             <div className="container main-actorsPage-container">
                 <div className="row">
-                    <h1>СКЛАД ТЕАТРУ</h1>
+                    <h1 className= "storage">СКЛАД ТЕАТРУ</h1>
                     <div className="actors-button-container">
                         <button className="btn-actors" onClick={this.showActors}>Трупа</button>
                         <button className="btn-actors" onClick={this.showDirection}>Дирекція та художнє керівництво</button>

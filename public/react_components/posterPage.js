@@ -409,12 +409,12 @@ class Poster extends React.Component {
                     { className: 'poster-button-container' },
                     React.createElement(
                         'button',
-                        { className: 'btn btn-primary btn-month', onClick: this.showMay },
+                        { className: 'btn btn-primary btn-may', onClick: this.showMay },
                         '\u0422\u0440\u0430\u0432\u0435\u043D\u044C'
                     ),
                     React.createElement(
                         'button',
-                        { className: 'btn btn-primary btn-month', onClick: this.showJune },
+                        { className: 'btn btn-primary btn-june', onClick: this.showJune },
                         '\u0427\u0435\u0440\u0432\u0435\u043D\u044C'
                     )
                 ),
@@ -454,7 +454,7 @@ class MainPosterContainer extends React.Component {
                 { className: 'row' },
                 React.createElement(
                     'h1',
-                    null,
+                    { className: 'poster-main' },
                     '\u0410\u0424\u0406\u0428\u0410'
                 ),
                 React.createElement(

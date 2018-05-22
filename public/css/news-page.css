@@ -1,0 +1,46 @@
+.main-name-news {
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+.name-information {
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 55px;
+}
+.date-news{
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    margin-left: 150px;
+    margin-top: 10px;
+
+}
+
+.img-news {
+    height: 220px;
+    width: 300px;
+    border: 7px groove #f8a056;
+    margin-left: 55px;
+}
+.ornament-top-news {
+    width:330px;
+    height: 20px;
+    margin-left: 40px;
+
+}
+.ornament-bottom-news {
+    width:330px;
+    height: 10px;
+    margin-left: 40px;
+
+
+}

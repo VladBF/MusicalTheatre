@@ -48,7 +48,7 @@ class MainComponent extends React.Component{
                                     <Route exact path = "/actors" component={Actors}/>
                                     <Route  path = "/repertoire" component={Repertory}/>
                                     <Route exact path = "/story" component={Story}/>
-                                    <Route exact path = "/news" component={News}/>
+                                    <Route  path = "/news" component={News}/>
                                     <Route exact path = "/contacts" component={Contacts}/>
                                     <Route exact path = "/tickets" component={Ticket}/>
                                 </div>
