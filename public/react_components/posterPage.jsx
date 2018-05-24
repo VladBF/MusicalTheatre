@@ -130,11 +130,11 @@ let May =() => {
 
 
             <a className="left carousel-control" href="#testCarousel" role="button" data-slide="prev">
-                <span className="glyphicon glyphicon-chevron-left"></span>
+                <img src="../../image/ornament/ornament_7_2.png" alt=""  className="button-left"/>
             </a>
 
             <a className="right carousel-control" href="#testCarousel" role="button" data-slide="next">
-                <span className="glyphicon glyphicon-chevron-right"></span>
+                <img src="../../image/ornament/ornament_7.png" alt=""  className="button-right"/>
             </a>
         </div>
     )
@@ -218,11 +218,11 @@ let June =() => {
 
 
             <a className="left carousel-control" href="#testCarousel" role="button" data-slide="prev">
-                <span className="glyphicon glyphicon-chevron-left"></span>
+                <img src="../../image/ornament/ornament_7_2.png" alt=""  className="button-left"/>
             </a>
 
-            <a className="right carousel-control" href="#testCarousel" role="button" data-slide="next">
-                <span className="glyphicon glyphicon-chevron-right"></span>
+            <a className="right carousel-control" href="#testCarousel"role="button" data-slide="next">
+                <img src="../../image/ornament/ornament_7.png" alt=""  className="button-right"/>
             </a>
         </div>
     )
@@ -271,8 +271,8 @@ class Poster extends React.Component{
                 <div className="row">
 
                     <div className="poster-button-container">
-                        <button className="btn btn-primary btn-may" onClick={this.showMay}>Травень</button>
-                        <button className="btn btn-primary btn-june" onClick={this.showJune}>Червень</button>
+                        <button className="btn-may" onClick={this.showMay}>Травень</button>
+                        <button className="btn-june" onClick={this.showJune}>Червень</button>
                     </div>
 
                     {month}

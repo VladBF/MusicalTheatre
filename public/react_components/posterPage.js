@@ -197,12 +197,12 @@ let May = () => {
         React.createElement(
             'a',
             { className: 'left carousel-control', href: '#testCarousel', role: 'button', 'data-slide': 'prev' },
-            React.createElement('span', { className: 'glyphicon glyphicon-chevron-left' })
+            React.createElement('img', { src: '../../image/ornament/ornament_7_2.png', alt: '', className: 'button-left' })
         ),
         React.createElement(
             'a',
             { className: 'right carousel-control', href: '#testCarousel', role: 'button', 'data-slide': 'next' },
-            React.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
+            React.createElement('img', { src: '../../image/ornament/ornament_7.png', alt: '', className: 'button-right' })
         )
     );
 };
@@ -354,12 +354,12 @@ let June = () => {
         React.createElement(
             'a',
             { className: 'left carousel-control', href: '#testCarousel', role: 'button', 'data-slide': 'prev' },
-            React.createElement('span', { className: 'glyphicon glyphicon-chevron-left' })
+            React.createElement('img', { src: '../../image/ornament/ornament_7_2.png', alt: '', className: 'button-left' })
         ),
         React.createElement(
             'a',
             { className: 'right carousel-control', href: '#testCarousel', role: 'button', 'data-slide': 'next' },
-            React.createElement('span', { className: 'glyphicon glyphicon-chevron-right' })
+            React.createElement('img', { src: '../../image/ornament/ornament_7.png', alt: '', className: 'button-right' })
         )
     );
 };
@@ -409,12 +409,12 @@ class Poster extends React.Component {
                     { className: 'poster-button-container' },
                     React.createElement(
                         'button',
-                        { className: 'btn btn-primary btn-may', onClick: this.showMay },
+                        { className: 'btn-may', onClick: this.showMay },
                         '\u0422\u0440\u0430\u0432\u0435\u043D\u044C'
                     ),
                     React.createElement(
                         'button',
-                        { className: 'btn btn-primary btn-june', onClick: this.showJune },
+                        { className: 'btn-june', onClick: this.showJune },
                         '\u0427\u0435\u0440\u0432\u0435\u043D\u044C'
                     )
                 ),

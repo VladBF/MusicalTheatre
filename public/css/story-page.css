@@ -1,4 +1,51 @@
 
-.history-main-container{
+.name-history {
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
     color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+.information-text {
+    font-family: 'ElisabethischeBook';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    text-align: justify;
+    font-size:20px;
+}
+.img-history-right {
+    width: 300px;
+    height: 350px;
+    float: right;
+    margin: 7px 0 7px 7px;
+    clear: right;
+    border: 5px groove #f8a056;
+}
+.img-history-left {
+    width: 300px;
+    height: 350px;
+    float: left;
+    margin: 0 7px 7px 7px;
+    clear: right;
+    border: 5px groove #f8a056;
+}
+.text-story {
+    text-indent: 40px;
+}
+.ornament-story-block {
+    width: 1175px;
+    height: 10px;
+}
+.ornament-story-bottom {
+    width: 1175px;
+    height: 25px;
+}
+.ornament-story-top {
+    width: 1175px;
+    height: 25px;
+}
+.name-history {
+    margin-top: 45px;
 }

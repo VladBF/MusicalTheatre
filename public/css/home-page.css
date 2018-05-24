@@ -90,19 +90,19 @@
     font-size: 20px;
 
 }
-.glyphicon-chevron-left {
-    background-image: url(../image/ornament/ornament_7.png);
-    outline: none;
-    border: none;
+.button-left {
     width: 100px;
     height: 100px;
-    background-size: 100% 100%;
+    margin-left: -73px;
+    margin-top: 150px;
 }
-.glyphicon-chevron-right {
-    background-image: url(../image/ornament/ornament_7_2.png);
-    outline: none;
-    border: none;
+.button-left :hover{
+    width: 120px;
+    height: 120px;
+}
+.button-right {
     width: 100px;
     height: 100px;
-    background-size: 100% 100%;
+    margin-right: -73px;
+    margin-top: 150px;
 }
